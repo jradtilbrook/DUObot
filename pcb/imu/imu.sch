@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
@@ -1444,6 +1444,19 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <text x="-2.54" y="1.27" size="1.27" layer="25">&gt;NAME</text>
 <text x="-2.54" y="-2.54" size="1.27" layer="27">&gt;VALUE</text>
 </package>
+<package name="LED-0805">
+<smd name="ANODE" x="-0.85" y="0" dx="1" dy="1.4" layer="1"/>
+<wire x1="-0.25" y1="-0.65" x2="0.25" y2="-0.65" width="0.1524" layer="21"/>
+<wire x1="-0.25" y1="0.65" x2="0.25" y2="0.65" width="0.1524" layer="21"/>
+<text x="-0.5" y="0.8" size="0.4064" layer="25">&gt;NAME</text>
+<text x="-0.5" y="-1.2" size="0.4064" layer="27">&gt;VALUE</text>
+<smd name="CATHODE" x="0.85" y="0" dx="1" dy="1.4" layer="1"/>
+<wire x1="0.2" y1="0.3" x2="0.2" y2="0" width="0.127" layer="21"/>
+<wire x1="0.2" y1="0" x2="0.2" y2="-0.3" width="0.127" layer="21"/>
+<wire x1="0.2" y1="0" x2="-0.1" y2="0.3" width="0.127" layer="21"/>
+<wire x1="-0.1" y1="0.3" x2="-0.1" y2="-0.3" width="0.127" layer="21"/>
+<wire x1="-0.1" y1="-0.3" x2="0.2" y2="0" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="LED">
@@ -1555,6 +1568,15 @@ Standard schematic elements and footprints for 5mm, 3mm, 1206, and 0603 sized LE
 <connects>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="0805" package="LED-0805">
+<connects>
+<connect gate="G$1" pin="A" pad="ANODE"/>
+<connect gate="G$1" pin="C" pad="CATHODE"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -2167,7 +2189,7 @@ Standard 5-pin 0.1" header. Use with straight break away headers (SKU : PRT-0011
 <part name="GND6" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SJ3" library="SparkFun-Passives" deviceset="JUMPER-PAD-3-2OF3_NC_BY_TRACE" device="_SMALL"/>
 <part name="GND7" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="LED1" library="SparkFun-LED" deviceset="LED" device="0603"/>
+<part name="LED1" library="SparkFun-LED" deviceset="LED" device="0805"/>
 <part name="U2" library="SparkFun-PowerIC" deviceset="V_REG_LDO" device="SMD2"/>
 <part name="GND8" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="SUPPLY6" library="SparkFun-Aesthetics" deviceset="VCC" device=""/>

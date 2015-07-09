@@ -1,6 +1,5 @@
 # ignore eagle temp files
-*.s#*
-*.b#*
+*.?#?
 *.job
 *.pro
 
