@@ -19,7 +19,7 @@ The PCB's are included in the pcb directory. Two boards are designed:
 - IMU board with an MPU-6050 (or MPU-9150).
 
 
-## TODO:
+#### TODO:
 1. decide on electronic components
 1. design the main controller board
 2. design the imu breakout
