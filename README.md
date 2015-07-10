@@ -20,12 +20,12 @@ The PCB's are included in the pcb directory. Two boards are designed:
 
 
 #### TODO:
-1. decide on electronic components
-1. design the main controller board
-~~2. design the imu breakout~~
-2. order the pcbs
-3. make a parts list and order
-4. work on the code required
-5. design the chassis
-6. 3D print and laser cut the chassis
+1. [ ] decide on electronic components
+1. [ ] design the main controller board
+2. [x] design the imu breakout
+2. [ ] order the pcbs
+3. [ ] make a parts list and order
+4. [ ] work on the code required
+5. [ ] design the chassis
+6. [ ] 3D print and laser cut the chassis
 
