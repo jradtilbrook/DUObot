@@ -16,13 +16,13 @@ are laser cut acrylic, others are 3D printed.
 
 The PCB's are included in the pcb directory. Two boards are designed: 
 - Main controller board with an ATmega2560 and related control circuitry,
-- IMU board with an MPU-6050 (or MPU-9150).
+- IMU board with an MPU-9150.
 
 
 #### TODO:
 1. decide on electronic components
 1. design the main controller board
-2. design the imu breakout
+~~2. design the imu breakout~~
 2. order the pcbs
 3. make a parts list and order
 4. work on the code required
