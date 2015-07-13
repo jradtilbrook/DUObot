@@ -180,20 +180,12 @@
 <text x="0.75" y="14.5" size="0.6096" layer="21">X</text>
 <text x="3.75" y="12" size="0.6096" layer="21">Y</text>
 <text x="0.75" y="11.25" size="0.6096" layer="21">Z</text>
-<text x="15.25" y="9.25" size="0.6096" layer="16" ratio="12" rot="SMR270">Jarryd Tilbrook</text>
+<text x="15.25" y="14" size="0.6096" layer="16" ratio="12" rot="SMR270">Jarryd Tilbrook</text>
 <text x="11.5" y="0.75" size="0.6096" layer="16" ratio="12" rot="MR0">Rev1</text>
-<polygon width="0.1524" layer="42">
-<vertex x="9.25" y="1.5"/>
-<vertex x="11.75" y="1.5"/>
-<vertex x="11.75" y="0.5"/>
-<vertex x="9.25" y="0.5"/>
-</polygon>
-<polygon width="0.1524" layer="42">
-<vertex x="15.5" y="9.5"/>
-<vertex x="14.75" y="9.5"/>
-<vertex x="14.75" y="1.5"/>
-<vertex x="15.5" y="1.5"/>
-</polygon>
+<text x="15.25" y="5.25" size="0.6096" layer="16" ratio="12" rot="SMR270">Jul 2015</text>
+<rectangle x1="14.5" y1="0.75" x2="15.5" y2="5.5" layer="42"/>
+<rectangle x1="9.25" y1="0.5" x2="11.75" y2="1.5" layer="42"/>
+<rectangle x1="14.5" y1="6.25" x2="15.5" y2="14.25" layer="42"/>
 </plain>
 <libraries>
 <library name="SparkFun-Passives">
@@ -620,16 +612,19 @@ Please make sure your boards conform to these design rules.</description>
 <vertex x="0" y="21"/>
 <vertex x="16" y="21"/>
 </polygon>
-<via x="13.75" y="5.25" extent="1-16" drill="0.381"/>
+<via x="13.25" y="5.25" extent="1-16" drill="0.381"/>
 <via x="10.25" y="15.5" extent="1-16" drill="0.381"/>
-<via x="14.25" y="10.25" extent="1-16" drill="0.381"/>
+<via x="13.25" y="10.25" extent="1-16" drill="0.381"/>
 <via x="2.25" y="12.75" extent="1-16" drill="0.381"/>
 <via x="8" y="12.25" extent="1-16" drill="0.381"/>
 <via x="8" y="17.5" extent="1-16" drill="0.381"/>
-<via x="8" y="19.5" extent="1-16" drill="0.381"/>
+<via x="6" y="20" extent="1-16" drill="0.381"/>
 <contactref element="MPU9150" pad="1"/>
 <contactref element="MPU9150" pad="11"/>
-<wire x1="8" y1="12.25" x2="8.75" y2="11" width="0" layer="19" extent="1-1"/>
+<via x="13.75" y="13.5" extent="1-16" drill="0.381"/>
+<via x="10" y="20" extent="1-16" drill="0.381"/>
+<via x="1.25" y="3.75" extent="1-16" drill="0.381"/>
+<via x="1" y="15.75" extent="1-16" drill="0.381"/>
 </signal>
 <signal name="VCC">
 <contactref element="MPU9150" pad="13"/>
