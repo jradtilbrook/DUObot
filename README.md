@@ -26,6 +26,7 @@ The datasheets for the components used are held within the datasheets directory.
 1. [ ] decide on electronic components
 1. [ ] design the main controller board
 2. [x] design the imu breakout
+2. [ ] update imu to MPU-9250 for future revisions
 2. [ ] order the pcbs
 2. [ ] update readme: library dependencies,
 3. [ ] make a parts list and order
