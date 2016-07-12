@@ -1,23 +1,25 @@
 from pyb import Pin
 
-#todo: maybe use a custom mapper function?
-
 class Motor:
-    def __init__(self, a, b):
-        self._a = Pin(a, Pin.OUT_PP)
-        self._b = Pin(b, Pin.OUT_PP)
+    def __init__(self, pinA, pinB):
+        self._a = Pin(pinA, Pin.OUT_PP) #todo: check motor driver pins for internal pull resistors. or use pyboard pin pulling and open drain?
+        self._b = Pin(pinB, Pin.OUT_PP)
+        self.stop()
 
-    def stop(self):
-        self._a.low()
-        self._b.low()
+    # defaults to connect both terminals to GND, but can override to VCC
+    def stop(self, val = False):
+        self._a.value(val)
+        self._b.value(val)
 
     def drive(self, direction):
         if direction > 0:
-            # drive one direction
+            self._a.high()
+            self._b.low()
         elif direction == 0:
             self.stop()
         elif direction < 0:
-            # drive opposite direction
+            self._a.low()
+            self._b.high()
 
 class MotorPWM(Motor):
     def __init__(self, a, b, p):
