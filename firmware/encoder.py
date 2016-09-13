@@ -20,7 +20,8 @@ class Encoder():
     # Maps alternate pin function descriptions to the required timer number
     TIMER_MAP = {'AF1_TIM2': 2, 'AF2_TIM4': 4, 'AF2_TIM5': 5, 'AF3_TIM8': 8}
     # Maps pin names to the alternate function to use
-    AF_MAP = {'X1': 'AF2_TIM5', 'X2': 'AF2_TIM5', 'X9': 'AF2_TIM4', 'X10': 'AF2_TIM4', 'Y1': 'AF3_TIM8', 'Y2': 'AF3_TIM8'}
+    AF_MAP = {'X1' : 'AF2_TIM5', 'X2': 'AF2_TIM5', 'X9': 'AF2_TIM4',
+              'X10': 'AF2_TIM4', 'Y1': 'AF3_TIM8', 'Y2': 'AF3_TIM8'}
     # Defines the pin pairs that must be used
     PIN_PAIRS = [['X1','X9','Y1'],['X2','X10','Y2']]
     # Hysteresis value to overflow detection
